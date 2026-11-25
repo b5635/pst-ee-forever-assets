@@ -1,0 +1,39 @@
+{
+  "area_count": 123,
+  "stages": {
+    "depth": {
+      "areas": 123,
+      "depth_input": 518,
+      "failed": [],
+      "model": "xingyang1/Distill-Any-Depth-Large-hf",
+      "version": "depth-1"
+    },
+    "detect": {
+      "areas": 123,
+      "failed": [],
+      "model": "google/owlv2-base-patch16-ensemble",
+      "threshold": 0.12,
+      "version": "detect-1"
+    },
+    "lights": {
+      "areas": 123,
+      "failed": [],
+      "model": "google/owlv2-base-patch16-ensemble",
+      "version": "lights-3"
+    },
+    "surface": {
+      "areas": 123,
+      "failed": [],
+      "key_lines": 111,
+      "model": "xingyang1/Distill-Any-Depth-Large-hf",
+      "version": "surface-1"
+    },
+    "survey": {
+      "areas": 123,
+      "failed": [],
+      "model": "",
+      "version": "survey-1"
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Hand area lights for the lighting module (deployed to pst_forever\assets\lighting\arealights.tsv):
+# baked lights placed by hand where the GemRB lights stage found none (or missed one). They join the
+# area's lights.txt lights: same flicker, occlusion, painted glow (at x, y - z) and light budget.
+# Fields after the WED are those of a lights.txt "light" line, in area pixels:
+# WED     x     y     z    radius  r     g     b     strength  kind    shadow
+# AR0508 cave mouth: pale daylight in the opening (GemRB LIGHTING_PLAN 14: missed after two tries).
+AR0508    1575  1690  90   280     1.00  0.92  0.72  0.70      steady  1
+# AR1202 the glowing sphere on its pedestal (cyan, centre 945,1085).
+AR1202    945   1190  105  320     0.45  0.95  1.00  0.80      magic   1
+# AR0206 the candle stand by the back wall.
+AR0206    312   380   45   140     1.00  0.75  0.40  0.55      fire    0

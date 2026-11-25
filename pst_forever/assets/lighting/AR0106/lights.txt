@@ -1,0 +1,4 @@
+# GemRB baked scene lights
+version 1
+size 1664 1344
+key 0.3401 0.9404 0.2494 1.1521 0.9601 0.8065
