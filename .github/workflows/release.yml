@@ -1,6 +1,6 @@
 # Push a tag like v1.0.0 -> zip pst_forever/ and publish it as a GitHub release.
 # The zip has a fixed name, so this link always points at the newest one:
-#   https://github.com/<owner>/<repo>/releases/latest/download/pst_forever-lighting.zip
+#   https://github.com/<owner>/<repo>/releases/latest/download/pst_forever-assets.zip
 # Run it by hand from the Actions tab (workflow_dispatch) to get the zip as a build artifact only.
 name: release
 
@@ -20,13 +20,13 @@ jobs:
 
       # Layout = the game folder: players unzip it next to Torment.exe.
       - name: Package
-        run: zip -r -q pst_forever-lighting.zip pst_forever
+        run: zip -r -q pst_forever-assets.zip pst_forever
 
       - uses: actions/upload-artifact@v4
         if: github.event_name == 'workflow_dispatch'
         with:
-          name: pst_forever-lighting
-          path: pst_forever-lighting.zip
+          name: pst_forever-assets
+          path: pst_forever-assets.zip
           compression-level: 0
 
       - name: Release
@@ -34,6 +34,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: >
-          gh release create "$GITHUB_REF_NAME" pst_forever-lighting.zip
+          gh release create "$GITHUB_REF_NAME" pst_forever-assets.zip
           --verify-tag --title "$GITHUB_REF_NAME"
-          --notes "Unzip pst_forever-lighting.zip into the game folder, next to Torment.exe, then switch lighting on in pst_forever_config.exe. Needs PST Forever installed."
+          --notes "Unzip pst_forever-assets.zip into the game folder, next to Torment.exe, then switch lighting on in pst_forever_config.exe. Needs PST Forever installed."

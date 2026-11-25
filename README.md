@@ -7,7 +7,7 @@ Enhanced Edition_ (GOG 3.2.2.0). The lighting data comes from the [GemRB](https:
 ## Install
 
 1. Install [PST Forever](https://github.com/b5635/pst-ee-forever/releases).
-2. Download `pst_forever-lighting.zip` from this repository's Releases page (not "Source code").
+2. Download `pst_forever-assets.zip` from this repository's Releases page (not "Source code").
 3. Unzip it into the game folder, next to `Torment.exe`.
 4. Run `pst_forever_config.exe` and switch lighting on.
 
